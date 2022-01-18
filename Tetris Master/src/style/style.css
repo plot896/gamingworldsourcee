@@ -1,0 +1,69 @@
+body {
+	/*background-color: #333; */
+	color: black;
+	background: -webkit-linear-gradient(top, #154d9e, #b8d8e4);
+	padding: 0px;
+    margin: 0px;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+
+div#main {
+	margin: auto;
+	width: 330px;
+	background-color: transparent;
+	padding:10px;
+	border-radius:15px;
+	border:1px solid #000;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+div#canvasDiv {
+  padding:10px;
+  display: flex;
+  justify-content: center;
+}
+
+div#steuerung {
+	background-color:#fff;
+	padding:20px;
+	border-radius:30px;
+	border:transparent;
+}
+
+button {
+    background-color: #000000; /* Black */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.control {
+	background-color: #000000; /* Black */
+	border: none;
+	color: white;
+	padding: 10px 13px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+}
+
+#gradient {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+

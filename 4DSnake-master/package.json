@@ -1,0 +1,34 @@
+{
+    "name": "4dsnake",
+    "version": "0.7.3",
+    "description": "You've all seen snake, but let's bring it into the fourth D I M E N S I O N!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "http-server ./public --cors -c-1 -p ${PORT:-4000}"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AndresMWeber/4DSnake.git"
+    },
+    "keywords": [
+        "snake",
+        "4D",
+        "3D",
+        "three",
+        "threejs",
+        "javascript",
+        "game",
+        "game",
+        "engine"
+    ],
+    "author": "Andres Weber",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AndresMWeber/4DSnake/issues"
+    },
+    "homepage": "https://github.com/AndresMWeber/4DSnake#readme",
+    "dependencies": {
+        "http-server": "^0.12.1"
+    }
+}

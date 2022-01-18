@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script data-ad-client="ca-pub-4457287978127012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Space Runner</title>
+  <meta name='referrer' content='strict-origin'></meta>
+  <link rel='shortcut icon prefetch' as='image' href='./dist/assets/images/favicon.ico' type='image/x-icon' />
+  <link rel='preload' as='font' href='./dist/assets/fonts/BungeeOutline-Regular.ttf' type='font/ttf' crossOrigin='anonymous'></link>
+  <link rel='preload' href='./dist/styles/essential.css' as='style' />
+  <link rel='stylesheet' href='./dist/styles/essential.css' />
+  <link rel="stylesheet" href="./dist/styles/style.css" />
+  <script type='module' src="./dist/game.js "></script>
+</head>
+
+<body>
+  <canvas id="starry"></canvas>
+  <header class="header">
+    <div class="score">
+      <span>Score: </span>
+      <span id="cScore" class="scoreNum">0</span>
+    </div>
+    <h1 class="title">Space Runner</h1>
+    <div class="score topScore">
+      <span>Top Score: </span>
+      <span id="tScore" class="scoreNum">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="gameContainer">
+      <div class="obstacle" id="obst1">
+        <div class="pipe"></div>
+        <div class="hole"></div>
+      </div>
+
+      <div class="obstacle" id="obst2">
+        <div class="pipe"></div>
+        <div class="hole"></div>
+      </div>
+
+      <div id="character"></div>
+    </section>
+
+    <section class="overlay" id="overlay">
+      <div class="userIntro">
+        <h2 id="greet">Ready, Steady, SWOOOSH!</h2></span></h2>
+        <h2 id="gameOverText" class="hidden">GAME OVER!</h2>
+      </div>
+      <div class="lastscore hidden" id="c_lastscore">
+        <span>You scored</span>
+        <span id="lastScore"></span>
+        <span>points!</span>
+      </div>
+      <ol id="leaderboard" class="scoreList"></ol>
+      <button class="spaceBtn btn-shiny" id="startGameBtn">Play</button>
+      <button aria-label="Settings button" class="cogWheel animated" id="toggleSettings"></button>
+      <section class="settingsModal animated hidden" id="settingsModal">
+        <div class="info">
+          <div class="gameInstructions">
+            <h2>HOW TO PLAY?</h2>
+            <p class="howToPlay">
+              Press <code>SPACEBAR</code>, <code>ARROW-UP</code>, <code>W</code> OR <code>CLICK</code> anywhere to jump.
+              Keep jumping to dodge the COSMIC BEAMS and don't hit the ground!
+            </p>
+          </div>
+
+          <div class="authorInfo">
+            <div class="author">
+                <span></span>
+                <div id="authorName">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span>&nbsp;</span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+              </div>
+            </div>
+
+            <div class="contactInfo">
+            </div>
+          </div>
+        </div>
+
+        <div class="settings">
+          <button class="btn" id="toggleMusic" aria-label="Music Toggle Button">
+            <div class="ripple ripple--dark"></div>
+            <div class="ripple ripple--light"></div>
+
+            <div class="toggle toggle--dark">
+              <img src="./dist/assets/images/mute.svg" />
+            </div>
+            <div class="toggle toggle--light">
+              <img src="./dist/assets/images/sound.svg" />
+            </div>
+          </button>
+          <button type="button" class="spaceBtn btn-mini" id="resetScores">Reset Scores</button>
+        </div>
+      </section>
+    </section>
+  </main>
+</div>
+<script src="./dist/index.js"></script>
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL2QFL8VPT"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-WL2QFL8VPT');
+</script>
+</body>
+</html>

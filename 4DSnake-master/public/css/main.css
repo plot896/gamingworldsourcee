@@ -1,0 +1,227 @@
+html {
+    font-size: 2.5vh;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #CE4F6C 0%, #603556 100%);
+    transition: background-image 3s #603556 #CE4F6C;
+    overflow: hidden;
+    font-family: 'Offside', cursive;
+}
+
+
+
+canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#menu {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    display: block;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+h1 {
+    color: #FBB059;
+    font-size: 3rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.playMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+}
+
+button {
+    font-family: 'Offside', cursive;
+    display: inline-block;
+    padding-top: 1.5rem;
+    border: none;
+    margin: none;
+    background: none;
+    color: rgba(255, 255, 255, .5);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: color 50ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:focus:active {
+    color: white;
+    transform: scale(0.95)
+}
+
+button:hover {
+    color: #FBB059;
+}
+
+#quit {
+    position: absolute;
+    bottom: auto;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding-top: 0;
+}
+
+.quit:hover {
+    color: #df6874;
+}
+
+#title, #status, #score, #version {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+    display: block;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+#title {
+    top: 94%;
+    font-size: 1rem;
+    line-height: .5rem;
+}
+
+p {
+    font-size: .7rem;
+    color: rgba(255, 255, 255, .2)
+}
+
+#score {
+    top: 4%;
+}
+
+#status {
+    top: 30%;
+    font-size: 3rem;
+}
+
+#debugInfoL, #debugInfoR, #debugSceneInfo, #debugCheck, #autoTurnCheck {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    width: 25%;
+    height: 25%;
+    margin-left: 1rem;
+    text-align: left;
+    z-index: 101;
+    display: block;
+    font-size: .25rem;
+    line-height: .75rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #EEEEEE;
+}
+
+#debugSceneInfo {
+    left: 0%;
+    font-size: .3rem;
+}
+
+#debugInfoR {
+    top: 30%;
+}
+
+#debugCheck {
+    top: auto;
+    bottom: 30px;
+    right: 30px;
+}
+
+#autoTurnCheck {
+    top: auto;
+    bottom: 30px;
+    left: -10px;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+}
+
+.container {
+    display: block;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 0 !important;
+    width: 0 !important;
+    /* margin: 0 !important; */
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #b85052;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ce7dd0;
+}
+
+input:checked~.checkmark {
+    background-color: #952f69;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #b85052;
+}

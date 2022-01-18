@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script data-ad-client="ca-pub-4457287978127012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro11_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="article">
+    <meta property="og:title" name="twitter:title" content="Color Heroes - Guess the color game">
+    <meta name="description" content="Superhero color guessing game">
+    <meta property="og:description" name="twitter:description" content="Superhero color guessing game">
+    <meta property="og:image" name="twitter:image" content="https://colorhero.es/screenshot/screenshot.jpg">
+  
+    <title>Color Heroes - Guess the color game</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+  </head>
+<body>
+    <div class="wrapper">
+      <div role="status"></div>
+      <main role="main">
+        <noscript>Requires JavaScript</noscript>
+        <div class="svg current intro">
+          <p>Get your favorite superheroes and villains to fight alongside you by guessing the correct colors of their suits and gadgets.</p>
+          <p><button class="startgame">&#x26A1; Start game &#x26A1;</button></p>
+        </div>
+      </main>
+      <nav class="colors">
+        <a role="button" href="#" class="red" aria-disabled="true" aria-label="Red"></a>
+        <a role="button" href="#" class="green" aria-disabled="true" aria-label="Green"></a>
+        <a role="button" href="#" class="yellow" aria-disabled="true" aria-label="Yellow"></a>
+        <a role="button" href="#" class="blue" aria-disabled="true" aria-label="Blue"></a>
+        <a role="button" href="#" class="black" aria-disabled="true" aria-label="Black"></a>
+        <a role="button" href="#" class="purple" aria-disabled="true" aria-label="Purple"></a>
+        <a role="button" href="#" class="brown" aria-disabled="true" aria-label="Brown"></a>
+        <a role="button" href="#" class="pink" aria-disabled="true" aria-label="Pink"></a>
+      </nav>
+    </div>
+    <script src="js/svgs.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js', { scope: '/' }).then(() => {
+          console.log('Service Worker registered successfully.');
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+      }
+    </script>
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL2QFL8VPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL2QFL8VPT');
+</script>
+  </body>
+</html>

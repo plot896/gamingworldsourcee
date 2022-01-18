@@ -1,0 +1,913 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web Games">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Gaming, pacman, cutTheRope, tic-tac, HTML, CSS, JavaScript">
+  <meta name="author" content="Naman Malhotra">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/00b5db16d511d373c83b142b9/9fda4a894ece6f6349411f765.js");</script>
+  <title>GAMEWORLD</title>
+  <script data-ad-client="ca-pub-4457287978127012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<style>
+* {
+  margin: 0;
+  }
+
+  body {
+    background-image: url(/images/background\ image.png);
+	  width: 100%;
+  background-color: black;
+  }
+
+#background-image{
+background-image: url(/images/background\ image.png);
+width:100%;
+background-size:100%;
+height:25%;
+}
+
+#transpaerent-one{
+width:90%;
+height:90%;
+box-shadow:aqua 0px 0px 30px 0px;
+background-blend-mode:overlay;
+margin-left:65px;
+font-family: 'Poppins', sans-serif;
+}
+
+#transparent-two{
+width:100%;
+height:85%;
+box-shadow:aqua 0px 0px 30px 0px;
+background-color:#2F4F4F;
+background-blend-mode:overlay;
+font-family: 'Poppins', sans-serif;
+}
+
+#web-name{
+	font-family: 'Poppins', sans-serif;
+	color:white;
+font-size:25px;
+letter-spacing:10px;
+position:relative;top:20px;left:20px;
+}
+
+#web-name2{
+	color:white;
+	font-size:25px;
+	letter-spacing:10px;
+	position:relative;top:0px;
+	font-family: 'Poppins', sans-serif;
+
+	}
+
+#web-name:hover{
+cursor:pointer;
+background-color:aqua;
+color:red;
+box-shadow:aqua 0px 0px 30px 0px;
+width:320px;
+font-family: 'Poppins', sans-serif;
+
+}
+
+#home-btn{
+	font-family: 'Poppins', sans-serif;
+	position:relative;top:-10px;left:600px;
+border:1px solid white;
+width:120px;
+height:30px;
+text-align:center;
+line-height:30px;
+box-shadow:white 5px 0px 15px 0px;
+}
+#home-btn a{text-decoration:none;color:white;}
+#home-btn:hover{
+background-color:aqua;
+cursor:pointer;
+letter-spacing:5px;
+font-weight:bold;
+box-shadow:white 5px 0px 50px 0px;
+}
+#home-btn a:hover{color:red;}
+
+#games-btn ul{
+	font-family: 'Poppins', sans-serif;
+list-style:none;
+color:white;
+}
+#games-btn ul ul a{
+background-color: white;
+text-decoration:none;
+color:black;
+}
+#games-btn ul ul{display:none;}
+
+#games-btn ul li:hover ul{display:inline;}
+
+#games-btn ul li:hover{
+line-height:25px;
+color:red;
+width:190px;
+}
+
+#games-btn ul li a:hover{color:white;background-color:red;width:70px;height:50px;}
+#games-btn{
+box-shadow:white 5px 0px 10px 0px;
+border:1px solid white;
+width:130px;
+height:29px;
+line-height:30px;
+position:relative;top:-42px;left:750px;
+}
+#games-btn:hover{
+background-color:aqua;
+cursor:pointer;
+box-shadow:white 5px 0px 30px 0px;
+}
+
+
+
+
+
+#contact-btn{
+position:relative;top:-74px;left:900px;
+border:1px solid white;
+width:120px;
+height:29px;
+text-align:center;
+line-height:30px;
+box-shadow:white 5px 0px 15px 0px;
+}
+#contact-btn a{text-decoration:none;color:white;}
+#contact-btn:hover{
+background-color:aqua;
+cursor:pointer;
+letter-spacing:5px;
+font-weight:bold;
+box-shadow:white 5px 0px 50px 0px;
+}
+#contact-btn a:hover{color:red;}
+
+#text{
+font-family: 'Poppins', sans-serif;
+padding-top: 20px;
+color:lightgray;
+font-size:14px;
+position:relative;top: 75px; text-align: center;
+
+}
+
+.background-two{
+width:100%;
+height:199%;
+background-image: url(/images/background\ image.png);
+background-color:black;
+}
+
+.box{
+width:1136px;
+height:100px;
+box-shadow:white 5px 0px 10px 0px;
+margin-left:66px;
+border-radius:5px;
+}
+.box:hover{
+background-color: transparent;
+}
+
+.box-insider{
+	font-family: 'Poppins', sans-serif;
+width:1000px;
+height:70px;
+box-shadow:red 3px 0px 10px 0px;
+color:lightgray;
+border-radius:5px;
+line-height:30px;
+text-align:center;
+font-size: 14px;
+position:relative;top:15px;left:65px;
+background-color: #2F4F4F;
+}
+.box-insider:hover{
+background-color:aqua;
+cursor:pointer;
+box-shadow:white 5px 0px 20px 0px;
+color:black;
+}
+
+.container{
+	font-family: 'Poppins', sans-serif;
+width:946px;
+height:1085px;
+box-shadow:white 2px 0px 10px 0px;
+position:relative;top:50px;left:90px;
+}
+
+.topbar{
+	font-family: 'Poppins', sans-serif;
+width:945px;
+height:50px;
+background-color:orange;
+text-align:center;
+line-height:50px;
+font-size:25px;
+color:white;
+
+}
+.topbar:hover{
+background-color:aqua;
+cursor:pointer;
+color:red;
+letter-spacing:5px;
+}
+
+.gamename1{
+color:white;
+margin-top:30px;
+margin-left:725px;
+}
+.gamename1:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image1{
+width:203px;
+margin-top:25px;
+margin-left:710px;
+}
+
+.image1:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+
+
+.gamename2 a{text-decoration:none;color:white;}
+.gamename2 a:hover{color:aqua;}
+.gamename2{
+color:white;
+margin-top:-164px;
+margin-left:725px;
+}
+.gamename2:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image2{
+width:203px;
+height:230px;
+margin-top:20px;
+margin-left:485px;
+}
+
+.image2:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+
+
+.gamename3{
+color:white;
+padding-right: 300px;
+margin-top:-270px;
+margin-left:310px;
+}
+.gamename3:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image3{
+width:203px;
+height:233px;
+margin-top:20px;
+margin-left:260px;
+}
+
+.image3:hover{
+transform:translateY(30px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+
+
+
+
+.gamename4{
+color:white;
+margin-top:-270px;
+margin-left:70px;
+}
+.gamename4:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image4{
+width:203px;
+height:233px;
+margin-top:20px;
+margin-left:30px;
+}
+
+.image4:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+
+
+
+.gamename5{
+color:white;
+margin-top:60px;
+margin-left:760px;
+}
+.gamename5:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image5{
+width:203px;
+height:233px;
+margin-top:20px;
+margin-left:720px;
+}
+
+.image5:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+.gamename6{
+color:white;
+margin-top:-270px;
+margin-left:550px;
+}
+.gamename6:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image6{
+width:203px;
+height:233px;
+margin-top:20px;
+margin-left:485px;
+}
+
+
+.image6:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+
+
+
+.gamename7{
+color:white;
+margin-top:-268px;
+margin-left:320px;
+}
+.gamename7:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image7{
+width:203px;
+height:233px;
+margin-top:14px;
+margin-left:260px;
+}
+
+
+.image7:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.gamename8{
+color:white;
+margin-top:-268px;
+margin-left:100px;
+}
+.gamename8:hover{
+color:aqua;
+cursor:pointer;
+}
+
+.image8{
+width:203px;
+height:233px;
+margin-top:20px;
+margin-left:30px;
+}
+
+
+.image8:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:aqua 5px 0px 10px 0px;
+cursor:pointer;
+}
+
+.gamename9{
+	color:white;
+	margin-top:-268px;
+	margin-left:100px;
+	}
+	.gamename9:hover{
+	color:aqua;
+	cursor:pointer;
+	}
+	
+	.image9{
+	width:203px;
+	height:233px;
+	margin-top:20px;
+	margin-left:30px;
+	}
+	
+	
+	.image9:hover{
+	transform:translateY(18px);
+	transition:transform 1s;
+	box-shadow:aqua 5px 0px 10px 0px;
+	cursor:pointer;
+	}
+
+.horizontal-line{
+width:945px;
+height:1px;
+background-color:red;
+margin-top:-300px;
+}
+.horizontal-line2{
+	width:945px;
+	height:1px;
+	background-color:red;
+	margin-top:10px;
+	}
+
+.vertical-line{
+width:610px;
+height:1px;
+background-color:orange;
+transform:rotate(90deg);
+margin-left:395px;
+}
+
+.vertical-line2{
+width:610px;
+height:1px;
+background-color:orange;
+transform:rotate(90deg);
+margin-left:170px;
+}
+
+.vertical-line3{
+width:610px;
+height:1px;
+background-color:orange;
+transform:rotate(90deg);
+margin-left:-60px;
+}
+
+
+.box2{
+width:945px;
+height:330px;
+background-color:transparent;
+position:relative;top:330px;
+}
+
+.ps4text{
+color:white;
+padding-right: 500px;
+position:relative;top:20px;left:150px;
+line-height:25px;
+font-family:cursive;
+font-size:14px;
+}
+
+
+.picture{
+width:330px;
+box-shadow:white 5px 0px 10px 0px;
+position:relative;top:45px;left:300px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.endbar{
+width:945px;
+height:40px;
+background-color:aqua;
+position:relative;top:328px;
+text-align:center;
+color:black;
+font-weight:bold;
+line-height:40px;
+letter-spacing:10px;
+}
+.endbar:hover{
+background-color:aqua;
+color:black;
+cursor:pointer;
+}
+
+.box3{
+font-family: 'Poppins', sans-serif;
+width:100%;
+height:40%;
+background-blend-mode:100%;
+box-shadow:aqua 0px 0px 30px 0px;
+text-align: center;
+background-color:#2F4F4F;
+}
+
+.text-one:hover{color:red;cursor:pointer;}
+
+.line1{
+width:200px;
+height:1px;
+background-color:white;
+margin-left:315px;
+margin-top:-5px;
+}
+
+.text-two{
+color:white;
+margin-left:370px;
+line-height:90px;
+text-shadow:0px 10px 10px black;
+
+}
+
+.text-two:hover{color:red;cursor:pointer;}
+
+
+.text-three{
+color:white;
+margin-left:365px;
+line-height:20px;
+text-shadow:0px 10px 10px black;
+
+}
+
+.text-three:hover{color:red;cursor:pointer;}
+
+.text-four{
+color:white;
+font-size:18px;
+margin-left:780px;
+margin-top:-140px;
+text-shadow:0px 10px 10px black;
+
+}
+.text-four:hover{color:red;cursor:pointer;}
+
+.line2{
+width:200px;
+height:1px;
+background-color:white;
+margin-left:720px;
+margin-top:10px;
+}
+
+.text-five{
+color:white;
+margin-left:810px;
+margin-top:35px;
+text-shadow:0px 10px 10px black;
+
+}
+.text-five:hover{color:red;cursor:pointer;}
+
+@media only screen and (max-width: 600px) {
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+      height: auto;
+}
+
+#transparent-two {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  padding: 0.15rem;
+  height: unset;
+}
+
+.buttons-container {
+  position: static;
+  display: flex;
+  z-index: 10;
+      height: auto;
+}
+
+.button {
+  position: static !important;
+}
+
+#text {
+  position: static !important;
+}
+
+#web-name {
+  position: static;
+}
+
+#web-name > * {
+  position: static;
+}
+
+  .games-container {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  .games{
+      position: static !important;
+  }
+
+#transpaerent-one {
+  margin: 0;
+  width: 100%;
+}
+
+.background-two > .box {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+
+.background-two > .box > .container{
+  position: static;
+  width: auto;
+  height: 65.0rem;
+
+}
+
+.background-two > .box > .container > .topbar{
+  position: static;
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  margin-top: 2.0rem;
+}
+
+.background-two > .box > .container > .gamename4 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.background-two > .box > .container > .image4 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+.background-two > .box > .container > .gamename3 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+.background-two > .box > .container > .image3 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+.background-two > .box > .container > .endbar {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  margin-top: 8.0rem;
+}
+
+  .background-two > .box > .container > .endbar1 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  margin-top: 25.0rem;
+}
+
+  .background-two > .box > .container > .endbar4 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  margin-top: 25.0rem;
+}
+
+.background-two > .box > .container > .endbar2 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  margin-top: 26.0rem;
+}
+
+.background-two > .box > .container > .box3 {
+  position: static;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+  .background-two > .box > .container > .horizontal-line {
+  position: static;
+  width: 100%;
+      
+  
+  }
+
+
+.background-two > .box > .box-insider {
+  width: 100%;
+  position: static;
+  box-shadow: none;
+}
+
+}
+
+
+
+</style>
+<body>
+  <div id="background-image">
+  <div id="transpaerent-one">
+  <div id="transparent-two">
+
+    <div id="web-name"><a style="color: white;" href="/index.html"> GAME<font color="red">-</font>WORLD</div></a>
+    <div class="buttons-container">
+        <div id="home-btn" class="button"><a href="/index.html">HOME</a></div>
+        <div id="games-btn" class="button">
+            <ul>
+            <li>GAMES<ul>
+            <li><a href="/mindebender.html">MIND BENDERS</a></li>
+            <li><a href="/addictive.html">ADDICITIVE GAMES</a></li>
+            <li><a href="/diffcult.html">DIFFICULT GAMES</a></li>
+            <li><a href="/classic.html">CLASSIC GAMES</a></li>
+            <li><a href="/games.html">ALL GAMES</a></li>
+            </ul></li>
+            </ul>
+        </div>
+        <div id="contact-btn" class="button"><a href="/contact-us/">CONTACT</a></div>
+    </div>
+  
+  <p id="text">
+
+  Welcome to <font color="red">GAME-WORLD</font> for an incredible collection of Addicitive modern and classic games 
+  </p>
+  </div>
+  </div>
+  </div>
+  <div class="background-two">
+  <div class="box">
+  <div class="box-insider"><font color="red">GAMES-WORLD</font> is a gaming website that includes Mindbenders and Addicitive Games,
+    Difficult Games, Classic Games.</div>
+    <div class="contact-title">
+        <div class="raw">
+                <h1>Contact Us.</h1>
+
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email"
+            required><br>
+            <textarea name="message" class="form-control" placeholder="Message" row="4"
+            repuired></textarea><br>
+
+            <input type="submit" class="form-control submit" value="SEND MESSAGE"> 
+        </form>
+    </div>
+        </div>
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL2QFL8VPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL2QFL8VPT');
+</script>
+
+
+<div class="box2">
+
+
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<div class="box3">
+  <div id="web-name2"><a style="color: white;" href="/index.html"> GAME<font color="red">-</font>WORLD</div></a>
+
+  <br>
+  <br>
+  <br>
+  <span id="footer"><p style="color: white;">&#169; 2020 <a style="color: white;" href="index.html">GAMEWORLD</a><a> , GAMEWORLDGAME,Inc .</a></p></span>
+  <br>
+
+</span> </span><a style="color: white;" href="/about.html">About Us</a><span> | </span><a style="color: white;" href="/contact-us/">Contact Us</a><span> |  </span><a style="color: white;" href="/service.html">Terms of Service</a><span> | </span><a style="color: white;" href="/privacy policy.html">Privacy Policy</a><span>
+
+</div>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/00b5db16d511d373c83b142b9/9fda4a894ece6f6349411f765.js");</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4457287978127012"
+     crossorigin="anonymous"></script>
+<!-- google ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4457287978127012"
+     data-ad-slot="1152665227"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</body>
+</html>

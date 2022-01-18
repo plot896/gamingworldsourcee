@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web Games">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="pool game, classic pool, 8pool ball, HTML, CSS, JavaScript">
+	<meta name="author" content="Naman Malhotra">
+    <script data-ad-client="ca-pub-4457287978127012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <title>Classic Pool Game</title>
+    <link rel="stylesheet" type="text/css" href="css/game-layout.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/sprites/favicon.png"/>
+    <script src="script/lib/LAB.min.js"></script>
+    <script>
+        $LAB
+                .script('script/system/Keys.js').wait()
+                .script('script/system/Color.js').wait()
+                .script('script/geom/Vector2.js').wait()
+                .script('script/input/ButtonState.js').wait()
+                .script('script/input/Keyboard.js').wait()
+                .script('script/input/Mouse.js').wait()
+                .script('script/Global.js').wait()
+                .script('script/Canvas2D.js').wait()
+                .script('script/game_objects/Score.js').wait()
+                .script('script/game_objects/Ball.js').wait()
+                .script('script/game_objects/Stick.js').wait()
+                .script('script/menu/Label.js').wait()
+                .script('script/menu/Button.js').wait()
+                .script('script/menu/Menu.js').wait()
+                .script('script/menu/MainMenu.js').wait()
+                .script('script/AI/Opponent.js').wait()
+                .script('script/AI/AIPolicy.js').wait()
+                .script('script/AI/AITrainer.js').wait()
+                .script('script/game_objects/Player.js').wait()
+                .script('script/GamePolicy.js').wait()
+                .script('script/GameWorld.js').wait()
+                .script('script/Game.js').wait()
+                .script('script/Assets.js').wait(function () {
+                    Game.start('gameArea','screen', 1500, 825);
+                });
+
+    </script>
+</head>
+<style>
+	* {box-sizing: border-box;}
+	
+	body { 
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.header {
+	  overflow: hidden;
+	  background-color: grey;
+	  padding: 10px 20px;
+	}
+	
+	.header a {
+	  float: left;
+	  color: black;
+	  text-align: center;
+	  padding: 12px;
+	  text-decoration: none;
+	  font-size: 18px; 
+	  line-height: 25px;
+	  border-radius: 4px;
+	}
+	
+	.header a.logo {
+	  font-size: 25px;
+	  font-weight: bold;
+	}
+	
+	.header a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	.header-right {
+	  float: left;
+	}
+	
+	@media screen and (max-width: 500px) {
+	  .header a {
+		float: none;
+		display: block;
+		text-align: left;
+	  }
+	  
+	  .header-right {
+		float: none;
+	  }
+	}
+	div {   
+border: 3px;  
+padding-bottom: contain;  
+background-color: auto; 
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 10px;
+	}
+
+	.s3 {
+	  text-align: center;
+	  padding: 20px;
+	  background-color: darkgray;
+	}
+
+	</style>
+  <body style = "background-color:black">
+      <div id="gameArea">
+        <canvas id="screen" width="2000" height="1000"></canvas>
+        </div>
+        </div>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL2QFL8VPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL2QFL8VPT');
+</script>
+</body>
+</html>

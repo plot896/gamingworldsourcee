@@ -1,0 +1,412 @@
+* {
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+body {
+	background: url("../Images/background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/************************ headder ******************************/
+/**************************************************************/
+
+.headder {
+	height: 100px;
+	display: flex;
+	color: rgb(255, 255, 255);
+	font-size: 3.5rem;
+	font-family: Century Gothic;
+	justify-content: center;
+}
+
+.headder p {
+	margin: 10px 2px;
+	transition: font-size 120ms;
+}
+
+.headder p:hover {
+	cursor: pointer;
+	color: rgb(255, 136, 0);
+	font-size: 4rem;
+}
+
+/************************ Piano ********************************/
+/**************************************************************/
+
+.piano-container {
+	position: relative;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.piano-top {
+	background-color: rgb(26, 28, 31);
+	height: 40px;
+}
+
+/************** White Keys ************/
+
+.piano-white {
+	height: 245px;
+	display: grid;
+	grid-template-columns: repeat(36, 1fr);
+}
+
+.white-key {
+	background-color: white;
+	border: 1px solid #ccc;
+	height: 100%;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 4px 3px rgba(0, 0, 0, 0.7);
+	transition: height 100ms;
+	display: flex;
+	justify-content: center;
+}
+
+.white-key:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 3px 0 grey;
+}
+
+.white-key-pressed {
+	height: 99.2%;
+	background: linear-gradient(#fff, #ccc);
+	box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.key-name {
+	position: absolute;
+	bottom: 5%;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Century Gothic;
+}
+
+/************** Black Keys ************/
+
+.piano-black {
+	display: flex;
+	position: absolute;
+	top: 40px;
+	width: 97.77%;
+}
+
+.black-key {
+	background: linear-gradient(#333, #000);
+	height: 150px;
+	width: 23px;
+	box-shadow: inset 0 -1px 5px -1px rgba(255, 255, 255, 0.7);
+	border-width: 0 2px 7px 1px;
+	border-color: black;
+	border-style: solid;
+	transition: border-width 80ms;
+	display: flex;
+	justify-content: center;
+}
+
+.black-key > .key-name {
+	color: rgb(240, 240, 240);
+	font-size: 14px;
+	font-weight: bold;
+	bottom: 7%;
+}
+
+.black-key-grp {
+	width: 20%;
+	position: relative;
+}
+
+.black-key.k1 {
+	position: absolute;
+	left: 8%;
+}
+
+.black-key.k2 {
+	position: absolute;
+	left: 23%;
+}
+
+.black-key.k3 {
+	position: absolute;
+	left: 49%;
+}
+
+.black-key.k4 {
+	position: absolute;
+	left: 64%;
+}
+
+.black-key.k5 {
+	position: absolute;
+	left: 79%;
+}
+
+.black-key:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 5px 0 #87cefa;
+}
+
+.black-key-pressed {
+	border-width: 1px !important;
+}
+
+.play-song {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	top: 72%;
+	transform: translate(-50%, -50%);
+}
+
+.song-name {
+	margin: 0;
+	margin-right: 30px;
+	font-size: 2rem;
+	font-family: Century Gothic;
+	color: rgb(255, 136, 0);
+}
+
+.auto-play {
+	font-size: 2rem;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	transition: all 150ms;
+}
+
+.auto-play:hover {
+	cursor: pointer;
+	background-color: #1db954;
+}
+
+.auto-stop {
+	background-color: #1db954;
+	transition: all 150ms;
+	font-size: 5rem;
+}
+.auto-stop:hover {
+	cursor: pointer;
+	background-color: #b9491d;
+}
+
+.list-btn {
+	padding: 8px;
+	font-family: Century Gothic;
+	border-radius: 8px;
+	outline: none;
+	border: 0;
+	position: absolute;
+	left: 50%;
+	top: 85%;
+	transform: translate(-50%, -50%);
+	transition: all 200ms;
+	font-size: 1rem;
+}
+
+.list-btn:hover {
+	cursor: pointer;
+	background-color: #87cefa;
+	font-size: 1.2rem;
+}
+
+.blur-bg {
+	opacity: 0.6;
+	background-color: #a8a8a8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	/* pointer-events: none; */
+}
+
+.mid-cnt {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.popup {
+	background: rgba(231, 231, 231, 0.8);
+	border-radius: 12px;
+
+	font-size: 1.1em;
+	filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.4));
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+}
+
+.cnt {
+	min-width: 25vw;
+	padding: 25px;
+}
+
+.list-song {
+	margin-top: 0;
+	font-family: "Muli";
+	cursor: pointer;
+}
+.list-song:hover {
+	text-shadow: 0 0 2px rgb(206, 110, 0);
+}
+
+.active-song {
+	color: rgb(206, 110, 0);
+}
+
+.cus-song:hover {
+	text-shadow: 0 0 3px rgb(0, 206, 93);
+}
+
+.closeBtn {
+	display: inline;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1em;
+	color: rgb(77, 77, 77);
+	margin-top: 20px;
+	margin-right: 15px;
+}
+.closeBtn:hover {
+	color: rgb(0, 0, 0);
+}
+
+.song-sheet {
+	width: 33vw;
+	height: 50vh;
+	font-size: 1.3rem;
+	font-family: "Inconsolata", monospace;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2rem;
+	font-family: Century Gothic;
+	margin-top: 0;
+}
+
+.grammar {
+	margin: auto 0;
+	margin-right: 2vw;
+	max-width: 20vw;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.grammar li {
+	margin-bottom: 6px;
+}
+
+/********************************--Loader--********************************/
+
+.loader {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(77, 77, 77);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader.hidden {
+	animation: fadeOut 0.6s 0.8s ease-in forwards;
+}
+
+.load-text {
+	font-size: 2em;
+	font-family: "Muli";
+	color: rgb(141, 255, 118);
+}
+
+#wk1 {
+	animation: a1 1.6s ease-in-out infinite;
+}
+#wk2 {
+	animation: a2 1.6s 0.4s ease-in-out infinite;
+}
+#wk3 {
+	animation: a3 1.6s 0.8s ease-in-out infinite;
+}
+#wk4 {
+	animation: a4 1.6s 1.2s ease-in-out infinite;
+}
+body {
+	text-align: center;
+}
+@keyframes a1 {
+	0%,
+	33% {
+		fill: white;
+	}
+	5%,
+	22% {
+		fill: #44c5cb;
+	}
+}
+
+@keyframes a2 {
+	0%,
+	33% {
+		fill: white;
+	}
+	5%,
+	22% {
+		fill: #fce315;
+	}
+}
+
+@keyframes a3 {
+	0%,
+	33% {
+		fill: white;
+	}
+	5%,
+	22% {
+		fill: #f53d52;
+	}
+}
+
+@keyframes a4 {
+	0%,
+	33% {
+		fill: white;
+	}
+	5%,
+	22% {
+		fill: #ff9200;
+	}
+}
+
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}

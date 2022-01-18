@@ -1,0 +1,190 @@
+.box{
+    width: 100px;
+    /* background-color: black; */
+    height: 100px;
+
+    position: absolute;
+    left: 47%;
+    top: 30%;
+    display:none;
+}
+#frog{
+  width: 50px;
+  height: 50px;
+
+}
+.topSection {
+  display: flex;
+}
+#hidden{
+  display: none;
+}
+#mutedspeaker, #speakeron {
+  font-size: 30px;
+  margin: 0px 20px;
+  text-align: center;
+}
+#mutedspeaker, #speakeron:hover {
+  cursor: pointer;
+}
+#game-canvas{
+  border: 10px solid #990073;
+  border-radius: 25px;
+  margin: 20px 0px;
+}
+.creator {
+  display: flex;
+}
+#aboutdiv {
+/* padding-left: 20px; */
+    border: 10px solid #990073;
+    border-radius: 25px;
+    margin: 20px 0px;
+  width: 1000px;
+  color: white;
+  letter-spacing: 0.5px;
+  font-family: arial, sans-serif;
+}
+#aboutdiv > h1, h2, ul, a, .abouttext {
+  margin: 20px;
+}
+#myname {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+#linked {
+  width: 150px;
+}
+#myname > a{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+button{
+  overflow: hidden;
+    height: 112px;
+    width: 300px;
+    font-family:  'Dekko';
+    font-size: 50px;
+    font-weight: 900;
+      box-shadow: 0 9px #999;
+    background-size: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+width: 100%;
+border: 10px solid black;
+border-radius: 25px;
+    background-image: url("https://s26.postimg.cc/9o512vvyx/backgroundforbuttons.jpg");
+}
+button:hover {
+  cursor: pointer;
+  background-image: url("https://s26.postimg.cc/cuzkmklkp/hoverbuttonbackground.jpg");
+}
+button:active {
+  background-image: url("https://s26.postimg.cc/cuzkmklkp/hoverbuttonbackground.jpg");
+  /* box-shadow: 0 5px #666; */
+  border: 7px solid black;
+  border-radius: 25px;
+  transform: translateY(4px);
+}
+button:focus {outline:0;}
+p {
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.leftSection{
+  /* width: 500px; */
+  background-color: black;
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+}
+.rightSection{
+  background-image: url("https://s26.postimg.cc/c6qq3e27t/rulesbackground.jpg");
+  max-width: 21%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 10px solid rgb(168, 102, 26);
+  border-radius: 20px;
+  margin: 20px 0px;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSection > .rules {
+  margin-left: 30px;
+  padding-left: 6px;
+  word-wrap: break-word;
+  padding-right: 1.5%;
+}
+.hidden{
+  display: none;
+}
+.show {
+  display: block;
+}
+.rules h1 {
+  color: #ffbf00;
+  text-shadow: 2px 2px 2px #ffe669;
+}
+.header {
+  object-fit: cover;
+  /* background-image: url("https://s26.postimg.cc/skfrjq9a1/zumafooter_renew.png"); */
+  background-size: cover;
+  align-items: center;
+}
+.header > img {
+  /* margin-left: 38%; */
+  width: 100%;
+}
+.rules > p:last-child {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+text-shadow: 1px 1px 2px black, 0 0 25px #fff700, 0 0 5px #898b00;
+}
+
+/* body{ */
+  /* background-color: yellow; */
+/* } */
+.leftImage {
+  border: 10px solid black;
+  border-radius: 25px;
+  width: 94%;
+  margin-top: 10px;
+}
+#frog, #skull, .gitlogo, .linkedlogo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+canvas {
+    margin: 0 auto;
+    display: block;
+    /* width: 800px; */
+}
+#mainfooter{
+  background-image: url("https://s26.postimg.cc/u9jsv0y6x/zumafooterreversed.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gitlogo {
+  left: 500px;
+}
+@media all and (max-width: 900px) {
+  .rightSection > img {
+    height: 100%;
+  }
+}

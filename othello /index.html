@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script data-ad-client="ca-pub-4457287978127012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="utf-8">
+    <title>WDI Project 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <!-- inject:js -->
+    <script src="js/app.js"></script>
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+  </head>
+
+  <style>
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color: darkgray;
+      padding: 10px 20px;
+    }
+    
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .header-right {
+      float: left;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+      }
+    }
+    div {   
+border: 3px;  
+padding-bottom: contain;  
+background-color: auto; 
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 10px;
+    }
+    </style>
+  <body>
+
+    <main>
+      <ul class="grid whiteGo">
+      </ul>
+      <div class="display">
+        <h1>Othello</h1>
+        <p>Black: <span class="blackDisplay">2</span></p>
+        <p>White: <span class="whiteDisplay">2</span></p>
+        <p class="winner"></p>
+      </div>
+    </main>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL2QFL8VPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL2QFL8VPT');
+</script>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  min-height: calc(100% + constant(safe-area-inset-top));
+  min-height: calc(100% + env(safe-area-inset-top));
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Open Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 100%;
+  background-color: #CDDCDC;
+  background-color: #CDDCDC;
+  background-image: linear-gradient(to top, white 0%, #dfe9f3 100%);
+}
+
+h1 {
+  font-size: 120%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+main {
+  position: relative;
+  flex: 1 0 0%;
+}
+
+.intro {
+  line-height: 1.5;
+  font-size: 120%;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  flex-direction: column;
+  padding: 0 5% !important;
+}
+
+.intro p {
+  text-align: center;
+}
+
+.startgame {
+  padding: .75rem;
+  min-width: 200px;
+  font-size: 110%;
+}
+
+nav.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav.colors a {
+  flex: 1 0 25%;
+  height: 80px;
+  max-height: 12vh;
+  transition: all .25s;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+nav.colors a[aria-disabled="true"] {
+  transform: scale(0);
+  visibility: hidden;
+}
+
+svg .color, .white {
+  fill: white;
+}
+
+nav a.red {
+  background-color: red;
+}
+
+.red .red {
+  fill: red;
+}
+
+nav a.green {
+  background-color: green;
+}
+
+.green .green {
+  fill: green;
+}
+
+nav a.yellow {
+  background-color: gold;
+  color: #000;
+}
+
+.yellow .yellow {
+  fill: gold;
+}
+
+nav a.blue {
+  background-color: blue;
+}
+
+.blue .blue {
+  fill: blue;
+}
+
+nav a.black {
+  background-color: black;
+}
+
+.black .black {
+  fill: black;
+}
+
+nav a.purple {
+  background-color: purple;
+}
+
+.purple .purple {
+  fill: purple;
+}
+
+nav a.brown {
+  background-color: brown;
+}
+
+.brown .brown {
+  fill: brown;
+}
+
+nav a.pink {
+  background-color: pink;
+  color: #000;
+}
+
+.pink .pink {
+  fill: pink;
+}
+
+div.svg {
+  position: absolute;
+  width: 100%;
+  transition: transform .5s;
+  will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 12%;
+}
+
+div.svg.new {
+  transform: translateX(102%);
+}
+
+div.svg.done {
+  transform: translateX(-102%);
+}
+
+div.svg.current {
+  transform: translateX(0);
+}
+
+svg {
+  width: 100%;
+  max-height: 50vh;
+}
+
+[role="status"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-top: calc(1rem + constant(safe-area-inset-top));
+  padding-top: calc(1rem + env(safe-area-inset-top));
+  transform: translateY(-100%);
+  transition: all .25s;
+  color: #000;
+  z-index: 2;
+  max-height: 20vh;
+  will-change: transform;
+}
+
+[role="status"] p {
+  margin: 0;
+}
+
+[role="status"].status {
+  background-color: lightskyblue;
+  transform: translateY(0);
+  transition: all .5s;
+}
+
+[role="status"].wrong {
+  background-color: orange;
+  transform: translateY(0);
+  transition: all .5s;
+}
+
+[role="status"].correct {
+  background-color: lightgreen;
+  transform: translateY(0);
+  transition: all .5s;
+}
+
+[role="status"].next ~ .wrapper nav, [role="status"].gameover ~ .wrapper nav {
+  pointer-events: none;
+}
+
+button {
+  border: 1px solid #000;
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 120%;
+  padding: .4rem;
+  min-width: 100px;
+}
+
+button[aria-disabled="true"] {
+  border: none;
+  font-weight: bold;
+  min-width: 0;
+  background: none;
+  color: #000;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px) scale(.75);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 75%;
+  }
+  [role="status"] {
+    padding: .75rem;
+  }
+  .startgame, button {
+    min-width: 0;
+    padding: .3rem;
+  }
+}
+
+@media (min-width: 767px) {
+  body {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 1279px) {
+  body {
+    font-size: 150%;
+  }
+  [role="status"] {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1919px) {
+  body {
+    font-size: 180%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #d9e1e8;
+    background-color: #111;
+    background-image: linear-gradient(to top, #444 0%, #333 100%);
+  }
+  svg .color, .white {
+    fill: #999;
+  }
+  button {
+    color: #000;
+    border-color: #d9e1e8;
+    background-color: #d9e1e8;
+  }
+  [role="status"], button[aria-disabled="true"], nav.colors a {
+    color: #d9e1e8;
+  }
+  [role="status"].status {
+    background-color: #083751;
+  }
+  [role="status"].wrong {
+    background-color: saddlebrown;
+  }
+  [role="status"].correct {
+    background-color: seagreen;
+  }
+  nav a.pink, nav a.yellow {
+    color: #000;
+  }
+}

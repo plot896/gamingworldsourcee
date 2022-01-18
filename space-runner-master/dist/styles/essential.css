@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bungee Outline";
+  src: url("../assets/fonts/BungeeOutline-Regular.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("../assets/fonts/PressStart2P-Regular.ttf") format("truetype");
+  font-display: fallback;
+}
+
+body {
+  font-size: 14px;
+  overflow: hidden;
+  font-family: "Press Start 2p", monospace;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+ol:empty {
+  display: none;
+}

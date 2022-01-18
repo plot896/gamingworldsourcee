@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web Games">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="typing game, typing test, typing speed, typing speed test, speed game,    HTML, CSS, JavaScript">
+  <meta name="author" content="Naman Malhotra">
+  <script data-ad-client="ca-pub-4457287978127012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <title>Simple Speed Typer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+*{margin:0;}
+#background-image{
+background-image:url("/images/background\ game\ world.jpg");
+background-size:cover;
+width:100%;
+height:30%;
+}
+
+#transpaerent-one{
+width:90%;
+height:90%;
+box-shadow:aqua 0px 0px 30px 0px;
+background-color:rgba(0,0,0,.3);
+background-blend-mode:overlay;
+margin-left:65px;
+}
+
+#transparent-two{
+width:100%;
+height:85%;
+box-shadow:aqua 0px 0px 30px 0px;
+background-color:rgba(0,0,0,.6);
+background-blend-mode:overay;
+}
+
+#web-name{
+color:white;
+font-size:25px;
+letter-spacing:10px;
+position:relative;top:20px;left:20px;
+}
+
+#web-name2{
+	color:white;
+	font-size:25px;
+	letter-spacing:10px;
+	position:relative;top:0px;
+	}
+
+#web-name:hover{
+cursor:pointer;
+background-color:aqua;
+color:red;
+box-shadow:aqua 0px 0px 30px 0px;
+width:320px;
+}
+
+#home-btn{
+position:relative;top:0px;left:500px;
+border:1px solid white;
+width:120px;
+height:30px;
+text-align:center;
+line-height:30px;
+box-shadow:white 5px 0px 15px 0px;
+}
+#home-btn a{text-decoration:none;color:white;}
+#home-btn:hover{
+background-color:aqua;
+cursor:pointer;
+letter-spacing:5px;
+font-weight;bold;
+box-shadow:white 5px 0px 50px 0px;
+}
+
+#games-btn ul{
+list-style:none;
+color:white;
+}
+#games-btn ul ul a{
+background-color: white;
+text-decoration:currentColor;
+color:black;
+}
+#games-btn ul ul{display:none;}
+
+#games-btn ul li:hover ul{display:inline;}
+
+#games-btn ul li:hover{
+line-height:30px;
+width:190px;
+}
+
+#games-btn{
+box-shadow:white 5px 0px 10px 0px;
+border:1px solid white;
+width:130px;
+height:29px;
+line-height:30px;
+position:relative;top:-32px;left:650px;
+}
+#games-btn:hover{
+background-color:aqua;
+cursor:pointer;
+box-shadow:white 5px 0px 30px 0px;
+}
+
+
+
+
+
+#contact-btn{
+position:relative;top:-65px;left:800px;
+border:1px solid white;
+width:120px;
+height:29px;
+text-align:center;
+line-height:30px;
+box-shadow:white 5px 0px 15px 0px;
+}
+#contact-btn a{text-decoration:none;color:white;}
+#contact-btn:hover{
+background-color:aqua;
+cursor:pointer;
+letter-spacing:5px;
+font-weight;bold;
+box-shadow:white 5px 0px 50px 0px;
+}
+
+#contact-btn2{
+position:relative;top:-95px;left: 945px;
+border:1px solid white;
+width:120px;
+height:29px;
+text-align:center;
+line-height:30px;
+box-shadow:white 5px 0px 15px 0px;
+}
+#contact-btn2 a{text-decoration:none;color:white;}
+#contact-btn2:hover{
+background-color:aqua;
+cursor:pointer;
+letter-spacing:5px;
+font-weight;bold;
+box-shadow:white 5px 0px 50px 0px;
+}
+
+#text{
+padding-top: -500px;
+color:white;
+font-size:18px;
+position:relative;top:20px;text-align: center;
+
+}
+
+.box3{
+width:100%;
+height:40%;
+background-color:slategray;
+text-align: center;
+}
+
+
+
+
+
+
+
+  </style>
+<body>
+  <div id="background-image">
+    <div id="transpaerent-one">
+    <div id="transparent-two">
+    <div id="web-name">GAME<font color="red">-</font>WORLD</div>
+    <div id="home-btn"><a href="/index.html">HOME</a></div>
+    <div id="games-btn">
+    <ul>
+      <li><a style="color: white;" href="/Typing Test/">PRACTISE</a></li>
+    </ul></li>
+    </ul>
+    </div>
+    <div id="contact-btn"><a href="/Typing lesson session/">Learn to type</a></div>
+    <div id="contact-btn2"><a href="/typing game/">TYPING-GAME</a></div>
+    <p id="text">
+      Welcome to <font color="red">GAMES-WORLD</font> this is the typing test and thier is so many typing games that you play and learn typing 
+
+      </p>
+    </div>
+    </div>
+    </div>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  <div class="container">
+    <div class="heading">Simple Speed Typing</div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Accuracy</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <button class="restart_btn" onclick="resetValues()">Restart</button>
+  </div>
+
+  <audio id="keyClick" src="sound/button.wav" hidden></audio>
+  <audio id="keyBeep" src="sound/beep.wav" hidden></audio>
+  
+  <script src="game.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WL2QFL8VPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WL2QFL8VPT');
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="box3">
+  <div id="web-name2"><a style="color: white;" href="/index.html"> GAME<font color="red">-</font>WORLD</div></a>
+
+  <br>
+  <br>
+  <br>
+  <span id="footer"><p>&#169; 2020 <a style="color: white;" href="index.html">GAMEWORLD</a><a> , GAMEWORLDGAME,Inc .</a></p></span>
+  <br>
+
+</span> </span><a style="color: white;" href="/about.html">About Us</a><span> | </span><a style="color: white;" href="/contact.us/">Contact Us</a><span> |  </span><a style="color: white;" href="/service.html">Terms of Service</a><span> | </span><a style="color: white;" href="privacy policy.html">Privacy Policy</a><span>
+
+</div>
+
+</body>
+</html>
